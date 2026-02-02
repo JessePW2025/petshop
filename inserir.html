@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD Imobiliária</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Cadastrar Cliente</h2>
+
+<form action="salvar.php" method="POST">
+    <input type="text" name="nome" placeholder="Nome" required>
+    <input type="text" name="telefone" placeholder="Telefone" required>
+    <input type="email" name="email" placeholder="E-mail" required>
+    <select name="tipo_imovel" required>
+        <option value="">Tipo de Imóvel</option>
+        <option>Casa</option>
+        <option>Apartamento</option>
+        <option>Terreno</option>
+    </select>
+    <input type="number" name="valor_max" placeholder="Valor máximo" required>
+    <button>Cadastrar</button>
+</form>
+
+</body>
+</html>
