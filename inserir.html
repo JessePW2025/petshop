@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop Amigo Fiel</title>
+</head>
+<body>
+    <form action="salvar.php" method="post">
+        <fieldset>
+            <legend>Dados do Responsável</legend>
+            <label for="nomeresponsavel">Nome:</label>
+            <input type="text" name="nomeresponsavel">
+            <label for="telefone">Telefone:</label>
+            <input type="text" name="telefone">
+            <label for="nome">Email:</label>
+            <input type="email" name="email">
+        </fieldset>
+        <fieldset>
+            <legend>Dados do Pet</legend>
+            <label for="nomepet">Nome do Pet:</label>
+            <input type="text" name="nomepet">
+            <label for="tipopet">Tipo de Pet:</label>
+            <select name="tipopet">
+                <option value="cachorro">Cachorro</option>
+                <option value="gato">Gato</option>
+                <option value="outros">Outros</option>
+            </select>
+            <label for="tiposervico">Tipo de Serviço:</label>
+            <select name="tiposervico">
+                <option value="banho">Banho</option>
+                <option value="tosa">Tosa</option>
+                <option value="consulta">Consulta</option>
+            </select>
+            <label for="valor">Valor do Serviço:</label>
+            <input type="number" name="valorservico">
+        </fieldset>
+        <button type="submit">Salvar</button>
+        <button type="reset">Limpar</button>
+    </form>
+</body>
+</html>
